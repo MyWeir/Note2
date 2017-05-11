@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,7 +33,7 @@ public class noteEdit extends AppCompatActivity {
 
     protected void OnCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.edit);
         tv_date = (TextView) findViewById(R.id.tv_date);
         Date date = new Date();
